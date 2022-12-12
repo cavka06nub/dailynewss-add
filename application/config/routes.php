@@ -51,9 +51,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['default_controller'] = 'UserController';
 $route['index'] = 'UserController/index';
-$route['about'] = 'UserController/about';
+$route['category'] = 'UserController/category';
 $route['contact'] = 'UserController/contact';
-$route['settings'] = 'UserController/settings';
+$route['single'] = 'UserController/single';
+// $route['settings'] = 'UserController/settings';
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+
+  //ADMIN
+  $route['a_login']             = 'AdminController/index';
+  $route['a_dashboard']         = 'AdminController/dashbord';           ;   
+  $route['a_news_list']         = 'AdminController/news_list';
+  $route['a_news_create']       = 'AdminController/news_create';
+
+
+  $route['404_override'] = '';
+  $route['translate_dashes'] = FALSE;
